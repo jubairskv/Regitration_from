@@ -8,6 +8,8 @@ const Registration = () => {
     password: "",
   });
 
+  console.log(input)
+
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
