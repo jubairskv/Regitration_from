@@ -16,7 +16,7 @@ const Login = () => {
       input.email === loggedUser.email &&
       input.password === loggedUser.password
     ) {
-        localStorage.setItem("loggedin", true)
+      localStorage.setItem("loggedin", true);
       navigate("/");
     } else {
       alert("Wrong Email and Password");
@@ -51,13 +51,21 @@ const Login = () => {
           />
         </div>
         <div>
-          <button type="text">Login</button>
+          <button type="submit">Login</button>
         </div>
         <div>
           <p>
-            Dont have an account
+            Don't have an account? 
             <Link to="/registration">
               <h6>Register Here</h6>
+            </Link>
+          </p>
+        </div>
+        <div>
+          <p>
+            Forgot your password? 
+            <Link to="/forgot-password">
+              <h6>Reset Here</h6>
             </Link>
           </p>
         </div>

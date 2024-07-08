@@ -4,6 +4,7 @@ import Registration from "./components/Registration";
 import Home from "./components/Home";
 import "./App.css";
 import ProtectedRoute from "./components/ProtectedRoute";
+import ForgotPassword from "./components/ForgotPassword";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<ProtectedRoute/>}>
           <Route path="/" element={<Home />} />
         </Route>
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
     </BrowserRouter>
   );
