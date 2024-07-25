@@ -55,7 +55,7 @@ const Login = () => {
         </div>
         <div>
           <p>
-            Don't have an account? 
+            Don't have an account?
             <Link to="/registration">
               <h6>Register Here</h6>
             </Link>
@@ -63,7 +63,7 @@ const Login = () => {
         </div>
         <div>
           <p>
-            Forgot your password? 
+            Forgot your password?
             <Link to="/forgot-password">
               <h6>Reset Here</h6>
             </Link>
