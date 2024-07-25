@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate ,Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Registration = () => {
   const [input, setInput] = useState({
@@ -7,9 +7,7 @@ const Registration = () => {
     email: "",
     password: "",
   });
-
-  console.log(input)
-
+  //console.log(input)
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -65,13 +63,13 @@ const Registration = () => {
           </div>
 
           <div>
-          <p>
-            Have already an account
-            <Link to="/login">
-              <h6>Login</h6>
-            </Link>
-          </p>
-        </div>
+            <p>
+              Have already an account
+              <Link to="/login">
+                <h6>Login</h6>
+              </Link>
+            </p>
+          </div>
         </form>
       </div>
     </div>
