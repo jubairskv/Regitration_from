@@ -7,7 +7,7 @@ const Registration = () => {
     email: "",
     password: "",
   });
-  //console.log(input)
+  console.log(input)
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -29,8 +29,8 @@ const Registration = () => {
               value={input.name}
               placeholder="Enter your name"
               onChange={(e) =>
-                setInput({ ...input, [e.target.name]: e.target.value })
-              }
+                setInput({ ...input, [e.target.name]: e.target.value }) //it hold value in key and value pair like this  // { 0: 1, 1: 2, 2: 3 }
+              }                                                         //im chnage my key and value as [e.target.name]:e.target.value
             />
           </div>
           <div className="email">
