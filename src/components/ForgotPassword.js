@@ -35,7 +35,6 @@ const ForgotPassword = () => {
           onChange={(e) => setNewPassword(e.target.value)}
         />
       </div>
-
       <button onClick={handleResetPassword}>Reset Password</button>
     </div>
   );
